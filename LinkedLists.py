@@ -32,9 +32,19 @@ head = Node(1)
 head.next = Node(2)
 prev = None
 curr = head
+
 while curr:
     next_node = curr.next
     curr.next = prev
     prev = curr
     curr = next_node
     head = prev
+
+# Double Linked List
+
+class Node:
+    def __init__(self, val):
+        self.val = val
+        self.next = None
+        self.prev = None
+
